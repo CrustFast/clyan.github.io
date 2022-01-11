@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	font-family: "Raleway", sans-serif;
+	background: #006ab7;
+}
+
+.nav-item,
+.nav-link {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
+.nav-link {
+	text-shadow: rgba(75, 70, 70, 0.1);
+	text-decoration: none;
+	padding: 6px 15px;
+	border-radius: 20px;
+}
+
+.nav-link:hover {
+	background: #0B63DC;
+	color: #fff;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	min-height: 10vh;
+	color: #fff;
+	align-items: center;
+}
+
+nav a {
+	justify-self: end;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+	grid-column: 2/3;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+section {
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero {
+	margin-top: 100px;
+	height: 105%;
+	width: 80%;
+	position: relative;
+}
+
+.hero img {
+	height: 100%;
+	width: 100%;
+
+}
+
+.headline {
+	position: absolute;
+	top: 70%;
+	left: 2%;
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	transform: translate(-20%, -70%);
+	color: #fff;
+	z-index: 3;
+	text-transform: uppercase;
+}
+
+.judul {
+	margin-top: 150px;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	margin-bottom: 90px;
+}
+
+.hero::after {
+	content: "";
+	background: black;
+	opacity: 0.3;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.container {
+	margin: 30px;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.image {
+	background: #50A7FF;
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 300px;
+	margin: 20px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.image img {
+	opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.image:hover img {
+	opacity: 1;
+}
+
+.image .details {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.image .details h2 {
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 70px;
+	transition: 0.4s;
+	transition-property: transform;
+}
+
+.image .details h2 span {
+	font-weight: 900;
+}
+
+.image:hover .details h2 {
+	transform: translateY(-30px);
+}
+
+.image .details p {
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.image:hover .details p {
+	opacity: 1;
+	transform: translateY(-40px);
+}
+
+.more {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	bottom: -60px;
+	transition: 0.6s;
+	transition-property: bottom;
+}
+
+.image:hover .more {
+	bottom: 0;
+}
+
+.more .read-more {
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.more .read-more span {
+	font-weight: 900;
+}
+
+.more .icon-links i {
+	color: #000;
+	font-size: 20px;
+}
+
+.more .icon-links a:not(:last-child) i {
+	margin-right: 20px;
+}
+
+.gbr {
+	max-width: 100%;
+	height: 100%;
+}
+
+.potrait {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+}
+
+.artikel {
+	margin-top: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 6px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.container a {
+	color: #FBB628;
+	font-weight: 200;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+/* Footer */
+.container {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	margin-top: 120px;
+	background-color: #0A2140;
+	padding: 70px 0;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #FBB628;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.hero {
+		display: block;
+		margin-left: auto;
+		margin-left: auto;
+		margin-top: 100px;
+		height: 75%;
+		width: 90%;
+		position: relative;
+	}
+	
+	.hero img {
+		height: 100%;
+		width: 100%;
+	
+	}
+
+	#logo {
+		grid-column: 2/3;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.headline {
+		position: absolute;
+		top: 70%;
+		left: 2%;
+		font-size: 30px;
+		font-family: 'Montserrat', sans-serif;
+		transform: translate(-20%, -70%);
+		color: #fff;
+		z-index: 3;
+		text-transform: uppercase;
+	}
+
+	.footer-col {
+		width: 100%;
+	}
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px) {
+	.image {
+		flex: 100%;
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 400px) {
+	.image .details p {
+		font-size: 16px;
+	}
+
+	.more .read-more,
+	.more .icon-links a i {
+		font-size: 18px;
+	}
+}
